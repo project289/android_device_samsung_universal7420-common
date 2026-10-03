@@ -1,7 +1,7 @@
 cc_library_shared {
     name: "libstagefright_shim",
     proprietary: true,
-	
+
     srcs: [
         "CameraSource.cpp",
     ],
@@ -21,7 +21,6 @@ cc_library_shared {
         "android.hardware.graphics.bufferqueue@2.0",
         "android.hidl.token@1.0-utils",
         "libbase",
-        "libcamera_client",
         "liblog",
     ],
 

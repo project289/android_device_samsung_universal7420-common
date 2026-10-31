@@ -75,8 +75,6 @@ TARGET_SCREEN_WIDTH := 1440
 # BSP
 PRODUCT_PACKAGES += \
 	memtrack.universal7420 \
-	gralloc.exynos7420 \
-	hwcomposer.universal7420 \
 	libcsc \
 	libfimg \
 	libexynosscaler \
@@ -100,8 +98,6 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-	camera.exynos5 \
-	android.hardware.camera.provider@2.5-service
 
 # Camera shim
 PRODUCT_PACKAGES += \
@@ -181,7 +177,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.hidl.base@1.0 \
 	android.hidl.manager@1.0 \
-	libhidltransport \
 	libhwbinder \
 	vndservicemanager
 
@@ -245,8 +240,6 @@ PRODUCT_PACKAGES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-	android.hardware.media.omx@1.0-impl \
-	android.hardware.media.omx@1.0-service
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -370,7 +363,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Stagefright shim
 PRODUCT_PACKAGES += \
-	libstagefright_shim
 
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile

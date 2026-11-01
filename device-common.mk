@@ -393,3 +393,11 @@ PRODUCT_COPY_FILES += \
 
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/universal7420-common/universal7420-common-vendor.mk)
+
+# Camera HAL (from samsungexynos7420)
+PRODUCT_PACKAGES += \
+    libcamera \
+    libcamera3 \
+    libcameraInterface \
+    libcamera_external \
+    camera.exynos5

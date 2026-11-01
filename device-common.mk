@@ -97,7 +97,7 @@ PRODUCT_PACKAGES += \
  	libOMX.Exynos.VP8.Encoder
 
 # Camera
-PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES +=
 
 # Camera shim
 PRODUCT_PACKAGES += \
@@ -117,14 +117,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 # DRM
-PRODUCT_PACKAGES += \
-	android.hardware.drm@1.0-impl \
-	android.hardware.drm@1.0-service \
-	android.hardware.drm@1.4-service.clearkey
+PRODUCT_PACKAGES +=
 
 # DTB
-PRODUCT_HOST_PACKAGES += \
-	dtbhtoolExynos
+PRODUCT_HOST_PACKAGES +=
 
 # FastCharge
 PRODUCT_PACKAGES += \
@@ -153,25 +149,16 @@ PRODUCT_PACKAGES += \
 	android.hardware.gatekeeper@1.0-impl
 
 # GNSS
-PRODUCT_PACKAGES += \
-	android.hardware.gnss@1.0-impl.universal7420 \
-	android.hardware.gnss@1.0-service.universal7420
+PRODUCT_PACKAGES +=
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/gps.conf
 
 # Graphics
-PRODUCT_PACKAGES += \
-	android.hardware.graphics.allocator@2.0-impl:64 \
-	android.hardware.graphics.allocator@2.0-service \
-	android.hardware.graphics.composer@2.1-service \
-	android.hardware.graphics.mapper@2.0-impl-2.1
+PRODUCT_PACKAGES +=
 
 # Health
-PRODUCT_PACKAGES += \
-	android.hardware.health@2.1-impl \
-	android.hardware.health@2.1-impl.recovery \
-	android.hardware.health@2.1-service
+PRODUCT_PACKAGES +=
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -239,7 +226,7 @@ PRODUCT_PACKAGES += \
 	android.hardware.nfc@1.2-service.exynos7420
 
 # OMX
-PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES +=
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -349,9 +336,7 @@ PRODUCT_COPY_FILES += \
 	$(COMMON_PATH)/seccomp/bootanim.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/bootanim.policy
 
 # Sensors
-PRODUCT_PACKAGES += \
-	android.hardware.sensors@1.0-impl.samsung:64 \
-	android.hardware.sensors@1.0-service
+PRODUCT_PACKAGES +=
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -362,7 +347,7 @@ PRODUCT_SOONG_NAMESPACES += \
 	hardware/samsung_slsi-linaro/exynos/cpboot
 
 # Stagefright shim
-PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES +=
 
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
@@ -382,9 +367,7 @@ PRODUCT_PACKAGES += \
 	vendor.lineage.trust@1.0-service
 
 # USB
-PRODUCT_PACKAGES += \
-	android.hardware.usb@1.0-impl \
-	android.hardware.usb@1.0-service.basic
+PRODUCT_PACKAGES +=
 
 # VNDK prebuilts
 PRODUCT_COPY_FILES += \
@@ -408,9 +391,7 @@ PRODUCT_PACKAGES += \
 	wifilogd \
 	wlutil \
 	wpa_supplicant \
-	wpa_supplicant.conf \
-	android.hardware.wifi@1.0-impl \
-	android.hardware.wifi@1.0-service
+	wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
 	$(COMMON_PATH)/configs/wifi/cred.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/cred.conf \

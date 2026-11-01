@@ -39,7 +39,6 @@ TARGET_NR_CPUS := 8
 
 # Audio
 TARGET_AUDIOHAL_VARIANT := samsung_7420
-AUDIOSERVER_MULTILIB := 32
 
 # Bluetooth
 BOARD_CUSTOM_BT_CONFIG := $(COMMON_PATH)/configs/bluetooth/libbt_vndcfg.txt
@@ -90,7 +89,6 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 -
 TARGET_KERNEL_SOURCE := kernel/samsung/universal7420
 TARGET_LINUX_KERNEL_VERSION := 3.10
 BOARD_KERNEL_IMAGE_NAME := Image
-BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_RAMDISK_USE_XZ := true
@@ -199,3 +197,8 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Inherit from the proprietary version
 include vendor/samsung/universal7420-common/BoardConfigVendor.mk
+
+BOARD_KERNEL_IMAGE_NAME := Image
+TARGET_KERNEL_SOURCE := kernel/samsung/universal7420
+TARGET_KERNEL_CONFIG := exynos7420-zerolte_defconfig
+TARGET_KERNEL_CLANG_VERSION := proton

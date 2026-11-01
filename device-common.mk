@@ -401,3 +401,11 @@ PRODUCT_PACKAGES += \
     libcameraInterface \
     libcamera_external \
     camera.exynos5
+
+# Camera HAL (from samsungexynos7420)
+PRODUCT_PACKAGES += \
+    libcamera \
+    libcamera3 \
+    libcameraInterface \
+    libcamera_external \
+    camera.exynos5
